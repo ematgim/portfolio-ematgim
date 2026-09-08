@@ -12,7 +12,8 @@ import {
   Dna,
   Package,
   MessageSquare,
-  Layout
+  Layout,
+  Waves
 } from 'lucide-react';
 import { ServiceProps, ExperienceProps, TechStackProps, ProjectProps } from '../types';
 
@@ -95,6 +96,18 @@ export const PROJECTS: ProjectProps[] = [
     link: null,
     github: "https://github.com/ematgim/ematgim.github.io",
     image: <Layout className="text-green-500" size={48} />,
+    stats: []
+  },
+  {
+    translationKey: "scubia",
+    title: "Scubia",
+    description: "Marketplace y directorio de centros de buceo del Mediterráneo con SEO programático.",
+    longDescription: "Plataforma que centraliza la oferta de centros de buceo del Mediterráneo: fichas de centro, bautismos y cursos, búsqueda por zona y ciudad, y generación programática de landings por localización. Construida con Next.js y Supabase, con datos estructurados (LocalBusiness) y sitemaps automáticos para captar tráfico orgánico de larga cola.",
+    tags: ["Next.js", "Supabase", "TypeScript", "SEO Programático", "Tailwind"],
+    featured: true,
+    link: "https://scubia.app",
+    github: null,
+    image: <Waves className="text-green-500" size={48} />,
     stats: []
   },
   {

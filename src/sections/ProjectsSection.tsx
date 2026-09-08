@@ -15,6 +15,14 @@ export const ProjectsSection = () => {
       };
     }
 
+    if (project.translationKey === 'scubia') {
+      return {
+        title: translation.scubiaTitle,
+        description: translation.scubiaDesc,
+        longDescription: translation.scubiaLongDesc
+      };
+    }
+
     if (project.translationKey === 'portfolio') {
       return {
         title: translation.portfolioTitle,
@@ -112,10 +120,12 @@ export const ProjectsSection = () => {
                     {project.link && (
                       <a
                         href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex-1 flex items-center justify-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 rounded-lg font-semibold text-[#0a0a0a] transition-colors group/btn"
                       >
                         <ExternalLink size={18} className="group-hover/btn:scale-110 transition-transform" />
-                        {translation.viewProject}
+                        {translation.visitProject}
                       </a>
                     )}
                     {project.github && (
